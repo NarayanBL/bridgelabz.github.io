@@ -323,3 +323,20 @@ function fwslider(){
 		
     }
 }
+
+
+
+
+
+$(window).load(function () {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 239,
+        itemMargin: 10,
+
+    });
+});
+
+
+

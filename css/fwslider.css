@@ -200,3 +200,14 @@
     #fwslider .timers { display:none; }
     #fwslider .slide_content {cursor: pointer;}
 }
+
+
+
+/*body { background-color: #f2f2f2; }*/
+#flexslider-carousel {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 453px;*/
+}
+.flex-next, .flex-prev { height: 46px !important;
+}
