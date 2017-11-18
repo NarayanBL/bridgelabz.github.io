@@ -338,7 +338,7 @@ ul li {
 
 
 .link-text {
-    margin-left: 1037px;
+    margin-left: 921px;
     font-size: 25px;
     color: cadetblue;
     font-family: 'Comic Sans MS';
@@ -423,4 +423,67 @@ ul li {
 .mr-dr-logo {
     margin-left: -25px;
     margin-top: 53px;
+}
+
+.mgt-tm-1 {
+    height: 341px;
+}
+
+.mgt-tm-2 {
+    height: 399px;
+}
+
+.model-pic {
+    background-color: whitesmoke;
+    width: 300px;
+    border-color: #808080;
+}
+.pic-caption {
+    background-color: white;
+    height: 100px;
+}
+
+
+
+.pic-desig {
+    margin-top: -48px;
+}
+
+.pic-hgt {
+    height:341px;
+}
+
+.prof-blk-1 {
+    margin-top: 33px;
+}
+
+.prof-blk-2 {
+    width: 195px;
+    margin-top: 56px;
+}
+
+.prof-blk-3 {
+    margin-top: 17px;
+    width: 195px;
+}
+
+.mar-design {
+    margin-top: -24px;
+}
+
+.caption {
+    height: 74px;
+}
+
+.caption-big {
+    height: 74px;
+    width: 195px;
+}
+
+.mar-design-1 {
+    margin-top: -26px;
+}
+
+.mar-design-2 {
+    margin-top: -23px;
 }

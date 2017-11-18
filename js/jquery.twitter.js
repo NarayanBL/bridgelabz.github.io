@@ -7,7 +7,7 @@
     }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
       return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
     });
-    statusHTML.push('<li class="one-third column"><i class="icon-twitter"></i><a class="tweet_time" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a><div class="clear"></div><span>'+status+'</span></li>');
+    statusHTML.push('<li class="     column"><i class="icon-twitter"></i><a class="tweet_time" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a><div class="clear"></div><span>'+status+'</span></li>');
   }
   return statusHTML.join('');
 }
