@@ -338,14 +338,14 @@ ul li {
 
 
 .link-text {
-    margin-left: 1049px;
+    margin-left: 1006px;
     font-size: 25px;
     color: cadetblue;
     font-family: 'Comic Sans MS';
 }
 
 .logo-mg-lg {
-    margin-top: -19px;
+    margin-top: 0px;
 }
 
 .logo-clnt-sm {
@@ -354,6 +354,7 @@ ul li {
 
 .logo-sm {
     margin-top: 29px;
+
 }
 
 .list-anchor {
@@ -458,7 +459,7 @@ ul li {
 }
 
 .prof-blk-2 {
-    width: 195px;
+    width: 210px;
     margin-top: 56px;
 }
 
@@ -486,4 +487,12 @@ ul li {
 
 .mar-design-2 {
     margin-top: -23px;
+}
+
+.client-logo {
+    width: 136px;
+}
+
+.ytr-logo {
+width:100px;
 }

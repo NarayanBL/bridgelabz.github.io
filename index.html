@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -31,6 +30,9 @@
     <link rel="stylesheet" href="css/flexslider/main.css" media="all">
     <link href="flexslider.css" rel="stylesheet" />
 
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -59,12 +61,21 @@
     <script src="js/jquery.quovolver.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="jquery.flexslider-min.js"></script>
+
+
+
+    <!-- jQuery library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="Scripts/bootstrap.min.js"></script>
+
+
     <script type="text/javascript">
         $(document).ready(function () {
-            //.parallax(xPosition, speedFactor, outerHeight) options:
-            //xPosition - Horizontal position of the element
-            //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-            //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
             $('.buy').parallax("50%", 0.4);
             $('.work').parallax("50%", 0.3);
             $('.testimonials').parallax("50%", 0.2);
@@ -103,10 +114,6 @@
                     <img src="images/slide-bg-3.jpg">
                     <div class="slide_content">
                         <div class="slide_content_wrap">
-                            <!--<div class="logo"><img src="images/logo.png"></div>
-                            <h4 class="title">Are you a Fresh Engineers wanting to work</br> with Super Tech Companies. </h4>
-                            <p class="description">Interested?</p>
-                            <a class="button readmore" href="#">Contact Us</a> -->
                         </div>
                     </div>
                 </div>
@@ -117,10 +124,6 @@
                     <img src="images/slide-bg-2.jpg">
                     <div class="slide_content">
                         <div class="slide_content_wrap">
-                            <!--	<div class="logo"><img src="images/logo.png"></div>
-                                <h4 class="title">Lab to Nurture </br>Startup Ideas. </h4>
-                                <p class="description">Partner with us.</p>
-                                <a class="button readmore" href="#">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -141,15 +144,6 @@
     <header>
         <nav>
             <!-- nav menu -->
-            <!--<ul class="clearfix">
-                <li><a class="current" href="#fwslider">Home</a></li>
-                <li><a href="#services">What We Do</a></li>
-                <li><a href="#associates">Who We Work With</a></li>
-                <li><a href="#about">Who We Are</a></li>
-                <li><a href="#contact">Get in Touch</a></li>#
-            </ul>-->
-
-
             <a class="current list-anchor" href="#fwslider">Home</a>
             <a href="#services" class="list-anchor">What We Do</a>
             <a href="#associates" class="list-anchor">Who We Work With</a>
@@ -164,94 +158,108 @@
     <!-- SERVICES / Start
     =========================================== -->
     <section id="services">
-        <div class="container">
-
-            <!-- Title -->
-            <div class="title">
-                <div class="six columns">
-                    <h2>What We Do</h2>
+        <container>
+            <row>
+                <div class="col-lg-12 col-md-12 col-sm-12 title">
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <h2>What We Do</h2>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5" style="margin-top:45px;">
+                        <p style="font-size:23px;"><b>We Nurture Fresh Engineers to become holistic Product Developer by working on live Startup Apps for Tech Companies to hire.</b></p>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
                 </div>
-
-                <div class="ten columns">
-                    <p class="three-lines" style="font-size:25px;"><b>We Nurture Fresh Engineers to become holistic Product Developer by working on live Startup Apps for Tech Companies to hire.</b></p>
-                </div>
-            </div>
-
-        </div>
+            </row>
+        </container>
 
         <div class="grey">
-            <div class="container">
 
-                <!-- service hex icons -->
-                <div class="one-third column">
-                    <figure class="service">
-                        <div class="hex">
-                            <span aria-hidden="true" class="li_user"></span>
-                        </div>
-                        <figcaption>
-                            <h3>Fresh Engineer</h3>
-                            <p>Learn to hack, be a full stack developer with a job in hand and get to work on live products under the mentorship of Senior Engineers.</p>
-                        </figcaption>
-                    </figure>
-                </div>
+            <container>
+                <row>
 
-                <!-- service hex icons -->
-                <div class="one-third column">
-                    <figure class="service">
-                        <div class="hex">
-                            <span aria-hidden="true" class="li_cloud"></span>
-                        </div>
-                        <figcaption>
-                            <h3>Tech Company</h3>
-                            <p>Get hardcore developers contributing from day one in the required technology stack without having your senior engineer to spend time to mentor the fresher. </p>
-                        </figcaption>
-                    </figure>
-                </div>
+                    <div class="col-lg-12 float-auto">
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <figure class="service">
 
-                <!-- service hex icons -->
-                <div class="one-third column">
-                    <figure class="service">
-                        <div class="hex">
-                            <span aria-hidden="true" class="li_star"></span>
-                        </div>
-                        <figcaption>
-                            <h3>Start Ups</h3>
-                            <p>Have solid ideas which never gets developed. BridgeLabz with its unique proposition and its ecosystem makes it a possibility with the co-founding senior engineers.</p>
-                        </figcaption>
-                    </figure>
-                </div>
+                                <div class="hex">
+                                    <span aria-hidden="true" class="li_user"></span>
+                                </div>
+                                <figcaption>
+                                    <h3>Fresh Engineer</h3>
+                                    <p>Learn to hack, be a full stack developer with a job in hand and get to work on live products under the mentorship of Senior Engineers.</p>
+                                </figcaption>
 
-                <!-- service hex icons
-                <div class="four columns">
-                    <figure class="service">
-                        <div class="hex">
-                            <span aria-hidden="true" class="li_diamond"></span>
+                            </figure>
                         </div>
-                        <figcaption>
-                            <h3>Know the Engineer</h3>
-                            <p style="text-align: justify;">Get an exclusive chance to know and connect with the fresh engineers blossoming in BridgeLabz with no commitment.</p>
-                        </figcaption>
-                    </figure>
-                </div> -->
-            </div>
+
+
+                        <div class="col-lg-2 col-md-3 col-sm-3">
+                            <figure class="service">
+                                <div class="hex">
+                                    <span aria-hidden="true" class="li_cloud"></span>
+                                </div>
+                                <figcaption>
+                                    <h3>Tech Company</h3>
+                                    <p>Get hardcore developers contributing from day one in the required technology stack without having your senior engineer to spend time to mentor the fresher. </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <figure class="service">
+                                <div class="hex">
+                                    <span aria-hidden="true" class="li_star"></span>
+                                </div>
+                                <figcaption>
+                                    <h3>Start Ups</h3>
+                                    <p>Have solid ideas which never gets developed. BridgeLabz with its unique proposition and its ecosystem makes it a possibility with the co-founding senior engineers.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+
+                    </div>
+                </row>
+            </container>
         </div>
 
-        <div class="container">
 
-            <figure class="promo clearfix">
-                <div class="eight columns">
-                    <img src="images/devices.png">
+        <container>
+            <row>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <figure class="promo clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">
+                            <div class="eight columns">
+                                <center>
+                                    <img src="images/devices.png">
+                                </center>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">
+                            <figcaption class="eight columns">
+                                <h3>KNOW THE ENGINEER PROGRAMME</h3>
+                                <p>Sign up for this unique FREE programme which gives an exclusive chance to know and connect with the fresh engineers blossoming in BridgeLabz. </br>Interested?</p>
+                                <a href="#contact" class="button">Contact Us</a>
+                            </figcaption>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+                    </figure>
                 </div>
 
-                <figcaption class="eight columns">
-                    <h3>KNOW THE ENGINEER PROGRAMME</h3>
-                    <p>Sign up for this unique FREE programme which gives an exclusive chance to know and connect with the fresh engineers blossoming in BridgeLabz. </br>Interested?</p>
-                    <a href="#contact" class="button">Contact Us</a>
-                </figcaption>
-            </figure>
-
-        </div>
-
+            </row>
+        </container>
     </section>
     <section class="buy">
 
@@ -269,80 +277,80 @@
     <section id="associates">
 
         <div class="container">
+            <!--// What we do Section-->
+            <container>
+                <row>
+                    <div class="col-lg-12 col-md-12 col-sm-12 title">
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">
+                            <h2>Who We Work With</h2>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5" style="margin-top:65px;">
+                            <p style="font-size:25px;"><b>We are proud to be associated with these awesome tech companies.</b></p>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    </div>
+                </row>
+            </container>
 
-            <!-- Title -->
-            <div class="title">
-                <div class="six columns">
-                    <h2>Who We Work With</h2>
-                </div>
+            <div class="" style="margin-top:265px;margin-bottom: 50px">
+                <div class="flexslider col-lg-12">
+                    <ul class="slides">
 
-                <div class="ten columns">
-                    <p class="two-lines"><b>We are proud to be associated with these awesome tech companies.</b></p>
+                        <li>
+                            <img src="images/partners/NewYatra-Logo.png" class="col-sm-1" style="width: 180px;margin-top: 5px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/merucabs_logo.png" class="col-sm-1" style="height: 68px;width: 255px;margin-top: -4px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/Intellect_logo.png" class="col-sm-1" style="margin-top: 5px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/RBL_logo.png" class="col-sm-1" style="margin-top: -6px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/suryoday_logo.png" class="col-sm-1" style="margin-top: 11px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/Cybage-Logo.png" class="col-sm-1" style="margin-top: 23px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/mindgate-logo-medium.png" class="logo-mg-lg" />
+                        </li>
+                        <li>
+                            <img src="images/partners/Vayana_logo.png" class="col-sm-1" style="width: 241px;margin-top: 20px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/hexagon-logo.png" class="col-sm-1" style="margin-top: 12px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/finacus-logo.png" class="col-sm-1" style="margin-top:1px" />
+                        </li>
+                        <li>
+                            <img src="images/partners/slonkit-logo.png" class="col-sm-1" style="margin-top:9px;" />
+                        </li>
+
+                        <li>
+                            <img src="images/partners/location-guru-logo.png" class="col-sm-1" />
+                        </li>
+                        <li>
+                            <img src="images/partners/i-exceed-logo.png" class="col-sm-1" style="margin-top: 9px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/MockBank-logo.png" class="col-sm-1" style="margin-top: 16px;" />
+                        </li>
+                        <li>
+                            <img src="images/partners/greyt-logo.png" class="col-sm-1" style="margin-top: 12px;" />
+                        </li>
+                    </ul>
                 </div>
             </div>
-
+            <div style="float:right;font-size:20px;color:cornflowerblue"> and many more ... </div>
         </div>
 
 
-        <div class="" style="margin-top:30px;margin-bottom: 50px;margin:50px;">
-            <!--<div class="container">-->
-
-            <div class="flexslider">
-                <ul class="slides">
-
-                    <li>
-                        <img src="images/partners/NewYatra-Logo.png" class="logo-sm" />
-                    </li>
-                    <li>
-                        <img src="images/partners/merucabs_logo.png" class="mr-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/Intellect_logo.png" class="int-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/RBL_logo.png" class="logo-sm" />
-                    </li>
-                    <li>
-                        <img src="images/partners/suryoday_logo.png" class="sur-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/Cybage-Logo.png" class="cyb-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/mindgate-logo-medium.png" class="mnd-gt-logo" style="width: 77%;" />
-                    </li>
-                    <li>
-                        <img src="images/partners/mera_doctor.png" class="mr-dr-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/craftsvilla_logo.png" class="logo-clnt-sm" />
-                    </li>
-                    <li>
-                        <img src="images/partners/Vayana_logo.png" class="logo-clnt-sm vy-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/heena.png" class="hn-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/xpresson.png" class="exp-logo" style="height: 77px;" />
-                    </li>
-                    <li>
-                        <img src="images/partners/hurix.png" class="hux-logo" />
-                    </li>
-                    <li>
-                        <img src="images/partners/99adventure.png" class="adv-logo" />
-                    </li>
-
-
-
-                    <!-- </li> -->
-                    <!-- items mirrored twice, total of 12 -->
-                </ul>
-
-            </div>
-            <label class="link-text">and many more ...</label>
-            <!-- </div> -->
-        </div>
     </section>
 
     <!-- SERVICES / End
@@ -362,582 +370,243 @@
     <!-- ABOUT / Start
     =========================================== -->
     <section id="about">
-        <div class="container">
-
-            <!-- Title -->
-            <div class="title clearfix">
-                <div class="six columns">
-                    <h2>Who We Are</h2>
+        <container>
+            <row>
+                <div class="col-lg-12 title">
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <h2>Who We Are</h2>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5" style="margin-top:45px;">
+                        <p style="font-size:23px;"><b>We are a team of passionate people working on exciting ideas in a Lab nurturing Fresh Engineers and Startups.</b></p>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
                 </div>
+            </row>
+        </container>
 
-                <div class="ten columns">
-                    <p class="three-lines" style="font-size:25px;">We are a team of passionate people working on exciting ideas in a Lab nurturing Fresh Engineers and Startups.</p>
-                </div>
-            </div>
 
-        </div>
+
 
         <!-- Some Text -->
         <div class="grey">
+
+            <container>
+                <row>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <article class="eight columns">
+                                <h3>Mission</h3>
+                                <p>
+                                    BridgeLabz mission is to fulfill the aspiration of fresh engineers to find jobs, tech companies
+                                    to have qualified fresh talent, senior engineer to co-found startups & seasoned professionals to develop ideas.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <article class="eight columns">
+                                <h3>Vision</h3>
+                                <p>
+                                    BridgeLabz aims to be a platform for seasoned professionals to develop their ideas with senior engineers who aspire to be co-founders.
+                                    They in turn use the fresh engineers to develop the apps who becomes qualified developer for a job with tech companies.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                    </div>
+                </row>
+            </container>
+
+
+
+
+
             <div class="container">
 
-                <article class="eight columns">
-                    <h3>Mission</h3>
-                    <p>
-                        BridgeLabz mission is to fulfill the aspiration of fresh engineers to find jobs, tech companies
-                        to have qualified fresh talent, senior engineer to co-found startups & seasoned professionals to develop ideas.
-                    </p>
-                </article>
-
-                <article class="eight columns">
-                    <h3>Vision</h3>
-                    <p>
-                        BridgeLabz aims to be a platform for seasoned professionals to develop their ideas with senior engineers who aspire to be co-founders.
-                        They in turn use the fresh engineers to develop the apps who becomes qualified developer for a job with tech companies.
-                    </p>
-                </article>
-
             </div>
+
         </div>
 
-
-        <!-- Skills
-        <div class="container">
-
-            <article>
-
-                <h5>Skills</h5>
-
-                <div class="sixteen columns">
-                    <ul class="skills clearfix">
-                        <li><span class="skill-title">Software Development</span><div class="skill-bar"><div class="skill-bar-content" data-percentage="90">90%</div></div></li>
-                        <li><span class="skill-title">Business Development</span><div class="skill-bar"><div class="skill-bar-content" data-percentage="80">80%</div></div></li>
-                        <li><span class="skill-title">Team Management</span><div class="skill-bar"><div class="skill-bar-content" data-percentage="90">90%</div></div></li>
-                        <li><span class="skill-title">Mobile Applications</span><div class="skill-bar"><div class="skill-bar-content" data-percentage="85">85%</div></div></li>
-                    </ul>
-                </div>
-
-            </article>
-
-        </div>		-->
         <!-- Team -->
         <div class="grey">
             <div class="container">
 
-
-
-
                 <article>
 
                     <h5>Our Faces</h5>
-                    
 
-                    <!--<div class="one-third column">-->
-                    <!--<figure class="picture">-->
-                    <!--<img src="images/ramesh_iyer.png">-->
-                    <!--<figcaption style="padding-bottom: 10px;">-->
-                    <!--<span>Ramesh Iyer&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-                    <!--<ul>-->
-                    <!--<li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>-->
-                    <!--</ul>-->
-                    <!--<span >CEO & Cofounder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-                    <!--</figcaption>-->
-                    <!--</figure>-->
-                    <!--</div>-->
-                    <div style="margin-left: 167px;">
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: -59px;">
-                            <figure class="picture prof-blk-1" >
-                                <img src="images/ramesh_iyer.png">
-                                <figcaption style="height: 74px;">
-                                    <span>Ramesh Iyer</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">CEO & Cofounder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: -59px;">
-                            <figure class="picture prof-blk-1" >
-                                <img src="images/face-two.jpg">
-                                <figcaption class="caption">
-                                    <span>Narayan Mahadevan</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Founder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-
-
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: -59px;">
-                            <figure class="picture prof-blk-1">
-                                <img src="images/Vishal Choksi.jpg" >
-                                <figcaption class="caption">
-                                    <span>Vishal Choksi</span>
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/vishal-choksi-b2a6ba5"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">COO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                    </div>
-
-                    <!--<div class="one-third column">
-                        <figure class="picture">
-                            <img src="images/Vishal Choksi.jpg">
-                            <figcaption style="height:97px;">
-                                <span>Vishal Choksi</span>
-                                <ul>
-                                    <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                                </ul>
-                                <br />
-
-                            </figcaption>
-                            <span style="margin-top: -53px;">COO</span>
-                        </figure>
-
-                    </div>-->
-
-                    <div style="margin-left: 63px;">
-
-                        <div>
-                        <!--    <hr style="margin-top:200px;">-->
-                        </div>
-                        <div class="one-third column" style="width: 192px;height: 215px;">
-                            <figure class="picture  prof-blk-2" >
-                                <img src="images/vidya.jpg">
-                                <figcaption class="caption">
-                                    <span>Shreevidya Ramamurthy</span>
-                                    <ul style="display:none">
-                                        <li><a href=""><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Director - Finance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="one-third column" style="width: 192px;height: 215px;">
-                            <figure class="picture  prof-blk-2" >
-                                <img src="images/Siddhartha Dev.jpg">
-                                <figcaption class="caption">
-                                    <span>Siddhartha Dev</span>
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/siddhartha-dev-97b84459"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Business Head - South &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-
-                        <div class="one-third column" style="width: 192px;height: 215px;">
-                            <figure class="picture  prof-blk-2" >
-                                <img src="images/Vivek Srinivasan.jpg">
-                                <figcaption class="caption">
-                                    <span>Vivek Srinivasan</span>
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/viveksrini/"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Consultant & Advisor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="one-third column" style="width: 192px;height: 215px;">
-                            <figure class="picture  prof-blk-2" >
-                                <img src="images/Anirudh Sangubhotla.jpg">
-                                <figcaption class="caption-big">
-                                    <span>Anirudh Sangubhotla</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/anirudh-sangubhotla"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design-2">Product Management &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                    </div>
-                    <hr style="display:none">
-                    <hr style="display:none">
-                    <div style="margin-left: 63px;">
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: 66px;">
-                            <figure class="picture prof-blk-3" >
-                                <img src="images/Sanjeev Nayer.jpg">
-                                <figcaption class="caption">
-                                    <span>Sanjeev Nayer</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/sanjeev-mohandas-nair-0731874"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Business Head - Rest of India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: 66px;"> 
-                            <figure class="picture  prof-blk-3" >
-                                <img src="images/veejay@bridge.jpg">
-                                <figcaption class="caption">
-                                    <span>Veejay Basottia</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">Head - HR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: 66px;">
-                            <figure class="picture  prof-blk-3" >
-                                <img src="images/Thangamani Durairaj.jpg">
-                                <figcaption class="caption-big">
-                                    <span>Thangamani Durairaj</span>
-                                    <ul>
-                                        <li><a href="https://in.linkedin.com/in/thangamani-durairaj-2ab22bb3"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design-1">Head - .NET Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="one-third column" style="width: 192px;height: 215px;margin-top: 66px;">
-                            <figure class="picture prof-blk-3" >
-                                <img src="images/Dilip More.jpg">
-                                <figcaption class="caption">
-                                    <span>Dilip More</span>
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/dilip-more-7347324"><i class="icon-linkedin"></i></a></li>
-                                    </ul>
-                                    <span class="mar-design">fundooBooks <br /> Engineering Lead &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                    </div>
-                    <!--<div class="one-third column">-->
-                    <!--<figure class="picture" style="padding-bottom: 10px;">-->
-                    <!--<img src="images/vidya.jpg">-->
-                    <!--<figcaption>-->
-                    <!--<span>Shreevidya Ramamurthy</span>-->
-                    <!--<span>Founder & Director</span>-->
-                    <!--</figcaption>-->
-                    <!--</figure>-->
-                    <!--</div>-->
-                    <!--<div class="one-third column">
-                        <figure class="picture">
-                            <img src="images/shailesh@bridge.jpg">
-                            <figcaption>
-                                <span>Shailesh Muthu</span>
-                                <ul>
-
-                                    <li><a href="https://in.linkedin.com/in/sailesh-muthu-4445127"><i class="icon-linkedin"></i></a></li>
-                                </ul>
-                                <span>Head Business Development</span>
-                            </figcaption>
-                        </figure>
-                    </div>-->
-                    <!--<div class="one-third column">
-                        <figure class="picture">
-                            <img src="images/veejay@bridge.jpg">
-                            <figcaption>
-                                <span>Veejay Basottia</span>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
-                                </ul>
-                                <span>Head Human Resource &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="one-third column">
-                        <figure class="picture">
-                            <img src="images/ashish.jpg">
-                            <figcaption>
-                                <span>Ashes Vats</span>
-                                <ul>
-
-                                    <li><a href="https://www.linkedin.com/in/ashes-vats-50734046"><i class="icon-linkedin"></i></a></li>
-                                </ul>
-                                <span>Engineering Head and Founding Member</span>
-                            </figcaption>
-                        </figure>
-                    </div>-->
-                    <!--<hr style="position:fixed">-->
-
-                </article>
-
-
-
-
-
-
-
-
-
-
-                <!--===============================================Commented=================================-->
-                <!--<div class="one-third column">-->
-                <!--<figure class="picture">-->
-                <!--<img src="images/ramesh_iyer.png">-->
-                <!--<figcaption style="padding-bottom: 10px;">-->
-                <!--<span>Ramesh Iyer&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-                <!--<ul>-->
-                <!--<li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>-->
-                <!--</ul>-->
-                <!--<span >CEO & Cofounder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-                <!--</figcaption>-->
-                <!--</figure>-->
-                <!--</div>-->
-                <!--<div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Ramesh Iyer.png" class="mgt-tm-1">
-                        <figcaption>
-                            <span>Ramesh Iyer&nbsp;&nbsp;</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <div>CEO</div>
-                            <div>CTO</div>
-
-                            <span>CEO & Cofounder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Narayan Mahadevan.png">
-                        <figcaption>
-                            <span>Narayan Mahadevan&nbsp;&nbsp;</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Vishal Choksi.png" class="mgt-tm-1">
-                        <figcaption>
-                            <span>Vishal Choksi&nbsp;&nbsp;<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>COO</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <hr>-->
-                <!--<div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Narayan Mahadevan.png" class="mgt-tm-1">
-                        <figcaption>
-                            <span>Narayan Mahadevan&nbsp;&nbsp;<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder</span>
-                        </figcaption>
-                    </figure>
-                </div>-->
-                <!--<div class="model-pic one-third columns">
-                    <figure class="picture">
-                        <img src="images/Ramesh Iyer.png" class="pic-hgt" />
-                        <div class="pic-caption">
-                            <span>Ramesh Iyer<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>
-                            </ul>
+                    <div>
+                        <div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1">
+                            <div class="col-sm-1 col-lg-1 col-md-1">
                             </div>
-                        <span class="pic-desig">Founder</span>
-                    </figure>
-                </div>
+                            <div class="col-sm-12 col-lg-12 col-md-12">
+                                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <figure class="picture prof-blk-1">
+                                        <img src="images/ramesh_iyer.png">
+                                        <figcaption style="height: 74px;">
+                                            <span>Ramesh Iyer</span>
+                                            <ul>
+                                                <li><a href="https://in.linkedin.com/in/ramesh-iyer-128b5a3a"><i class="icon-linkedin"></i></a></li>
+                                            </ul>
+                                            <span class="mar-design">CEO & Cofounder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <figure class="picture prof-blk-1">
+                                        <img src="images/face-two.jpg">
+                                        <figcaption class="caption">
+                                            <span>Narayan Mahadevan</span>
+                                            <ul>
+                                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
+                                            </ul>
+                                            <span class="mar-design">Founder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-md-3">
+                                    <figure class="picture prof-blk-1">
+                                        <img src="images/Vishal Choksi.jpg">
+                                        <figcaption class="caption">
+                                            <span>Vishal Choksi</span>
+                                            <ul>
+                                                <li><a href="https://www.linkedin.com/in/vishal-choksi-b2a6ba5"><i class="icon-linkedin"></i></a></li>
+                                            </ul>
+                                            <span class="mar-design">COO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
 
-
-
-                <div class="model-pic one-third columns">
-                    <figure class="picture">
-                        <img src="images/Narayan Mahadevan.png" />
-                        <div class="pic-caption">
-                            <span>Narayan Mahadevan<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
+                            </div>
                         </div>
-                        <span class="pic-desig">Founder</span>
-                    </figure>
-                </div>
+                    </div>
 
-                <div class="model-pic one-third columns">
-                    <figure class="picture">
-                        <img src="images/Vishal Choksi.png" class="pic-hgt" />
-                        <div class="pic-caption">
-                            <span>Vishal Choksi<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
+                    <!--==============================Row 2==========================================-->
+
+                    <div>
+                        <div class="col-sm-1  col-lg-1 col-md-1 " style="margin-left:100px;">
                         </div>
-                        <span class="pic-desig">Founder</span>
-                    </figure>
-                </div>
+                        <div class="col-sm-12 col-lg-12 col-md-12">
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/vidya.jpg">
+                                    <figcaption class="caption">
+                                        <span>Shreevidya Ramamurthy</span>
+                                        <ul style="display:none">
+                                            <li><a href=""><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Director - Finance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
 
-                <div class="model-pic one-third columns"
-                    <figure class="picture">
-                        <img src="images/Vidya Ramamurthy.jpg" class="pic-hgt" />
-                        <div class="pic-caption">
-                            <span>Vidya Ramamurthy<br /></span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
+
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Siddhartha Dev.jpg">
+                                    <figcaption class="caption">
+                                        <span>Siddhartha Dev</span>
+                                        <ul>
+                                            <li><a href="https://www.linkedin.com/in/siddhartha-dev-97b84459"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Business Head - South &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Vivek Srinivasan.jpg">
+                                    <figcaption class="caption">
+                                        <span>Vivek Srinivasan</span>
+                                        <ul>
+                                            <li><a href="https://www.linkedin.com/in/viveksrini/"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Consultant & Advisor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Anirudh Sangubhotla.jpg">
+                                    <figcaption class="caption-big">
+                                        <span>Anirudh Sangubhotla</span>
+                                        <ul>
+                                            <li><a href="https://in.linkedin.com/in/anirudh-sangubhotla"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design-2">Product Management &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
-                        <span class="pic-desig">Founder</span>
-                    </figure>
-                </div>-->
+
+                    </div>
 
 
+                    <!--=========================================== Row 3 ==============================================-->
+
+                    <div>
+                        <div class="col-sm-1 col-lg-1 col-md-1">
+                        </div>
+                        <div class="col-sm-12 col-lg-12 col-md-12">
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Sanjeev Nayer.jpg">
+                                    <figcaption class="caption">
+                                        <span>Sanjeev Nayer</span>
+                                        <ul>
+                                            <li><a href="https://in.linkedin.com/in/sanjeev-mohandas-nair-0731874"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Business Head - Rest of India &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
 
 
-                <!--Management Team-->
-                <!--<div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Vidya Ramamurthy.jpg">
-                        <figcaption>
-                            <span>Vidya Ramamurthy&nbsp;&nbsp;</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Siddhartha Dev.png" style="height: 400px;">
-                        <figcaption>
-                            <span>Siddhartha Dev</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Vivek Srinivasan.png" style="height: 400px;">
-                        <figcaption>
-                            <span>Vivek Srinivasan</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <hr>-->
-                <!--<div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Anirudh Sangubhotla.png" style="height: 400px;">
-                        <figcaption>
-                            <span>Anirudh Sangubhotla</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Sanjeev Nayer.png" style="height: 400px;">
-                        <figcaption>
-                            <span>Sanjeev Nayer</span>
-                            <ul>
-                                <li><a href="https://in.linkedin.com/in/narayanprofile"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Founder,Director & CTO Mauj Mobile</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Veejay Basottia.png" class="mgt-tm-2">
-                        <figcaption>
-                            <span>Veejay Basottia</span>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Head Human Resource &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </figcaption>
-                    </figure>
-                </div>
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/veejay@bridge.jpg">
+                                    <figcaption class="caption">
+                                        <span>Veejay Basottia</span>
+                                        <ul>
+                                            <li><a href="https://in.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Head - HR  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
 
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Thangamani Durairaj.jpg">
+                                    <figcaption class="caption">
+                                        <span>Thangamani Durairaj</span>
+                                        <ul>
+                                            <li><a href="https://in.linkedin.com/in/thangamani-durairaj-2ab22bb3"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design">Head - .NET Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
 
-                <hr>-->
-                <!--<div class="one-third column">
-                    <figure class="picture">
-                        <img src="images/Thangamani Durairaj.png" class="mgt-tm-1">
-                        <figcaption>
-                            <span>Thangamani Durairaj</span>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Head Human Resource &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </figcaption>
-                    </figure>
-                </div>-->
-                <!--<div class="one-third column">-->
-                <!--<figure class="picture" style="padding-bottom: 10px;">-->
-                <!--<img src="images/vidya.jpg">-->
-                <!--<figcaption>-->
-                <!--<span>Shreevidya Ramamurthy</span>-->
-                <!--<span>Founder & Director</span>-->
-                <!--</figcaption>-->
-                <!--</figure>-->
-                <!--</div>-->
-                <!--<div class="one-third column">-->
-                <!-- <figure class="picture"> -->
-                <!-- <img src="images/shailesh@bridge.jpg"> -->
-                <!-- <figcaption> -->
-                <!-- <span>Shailesh Muthu</span> -->
-                <!-- <ul> -->
-                <!-- <li><a href="https://in.linkedin.com/in/sailesh-muthu-4445127"><i class="icon-linkedin"></i></a></li> -->
-                <!-- </ul> -->
-                <!-- <span>Head Business Development</span> -->
-                <!-- </figcaption> -->
-                <!-- </figure> -->
-                <!--</div>-->
-                <!--<div class="one-third column">-->
-                <!--<figure class="picture">
-                        <img src="images/Dilip More.png">
-                        <figcaption>
-                            <span>Dilip More</span>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/vijaybasotia"><i class="icon-linkedin"></i></a></li>
-                            </ul>
-                            <span>Head Human Resource &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="one-third column">
-                    <figure class="picture">-->
-                <!-- <img src="images/ashish.jpg"> -->
-                <!-- <figcaption> -->
-                <!-- <span>Ashes Vats</span> -->
-                <!-- <ul> -->
-                <!-- <li><a href="https://www.linkedin.com/in/ashes-vats-50734046"><i class="icon-linkedin"></i></a></li> -->
-                <!-- </ul> -->
-                <!-- <span>Engineering Head and Founding Member</span> -->
-                <!-- </figcaption> -->
-                <!-- </figure> -->
-                <!--</div> <hr>-->
+                            </div>
+                            <div class="col-sm-3 col-lg-3 col-md-3">
+                                <figure class="picture  prof-blk-2">
+                                    <img src="images/Dilip More.jpg">
+                                    <figcaption class="caption-big">
+                                        <span>Dilip More</span>
+                                        <ul>
+                                            <li><a href="https://www.linkedin.com/in/dilip-more-7347324"><i class="icon-linkedin"></i></a></li>
+                                        </ul>
+                                        <span class="mar-design-2"> Engineering - Head &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
 
@@ -959,99 +628,94 @@
 
     </section>
 
-
-
-
     <!-- Contact / Srart
     ================================================== -->
     <section id="contact">
-        <div class="container">
 
-            <!-- Title -->
-            <div class="title clearfix">
-                <div class="six columns">
-                    <h2>Contact</h2>
+        <container>
+            <row>
+                <div class="col-lg-12 col-md-12 col-sm-12 title">
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5" style="margin-top:65px;">
+                        <p style="font-size:25px;"><b>Do you have any questions? <br> Get in touch!</b></p>
+                    </div>  
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
                 </div>
+            </row>
+        </container>
 
-                <div class="ten columns">
-                    <p class="two-lines">Do you have any questions? <br> Get in touch!</p>
-                </div>
-            </div>
-
-        </div>
 
         <div class="grey">
-            <div class="container">
+            <container>
+                <row>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                        <div class="contact-form" ng-controller="contactCntrl">
+                            <div class="sixteen columns">
+                                <div class="success-message">
+                                    <p>Your message has been sent!</p>
+                                </div>
+                            </div>
+                            <form class="clearfix" name="userForm" id="myForm1">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
 
-                <!-- Contact Form -->
-                <div class="contact-form" ng-controller="contactCntrl">
+                                    <div class="field user">
+                                        <input type="text" name="name" class="text" placeholder="Name" ng-model="name" required />
+                                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Name is required.</p>
+                                    </div>
 
-                    <div class="sixteen columns">
-                        <div class="success-message">
-                            <p>Your message has been sent!</p>
+                                    <div class="field envelope">
+                                        <input type="email" name="email" class="text" placeholder="Email" ng-model="email" required />
+                                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                                    </div>
+
+                                    <div class="field bulb">
+                                        <input type="text" name="subject" class="text" placeholder="Subject" ng-model="subject" required>
+                                    </div>
+
+                                    <div class="field user">
+                                        <input type="text" name="profile" class="text" ng-model="profile" placeholder="Your Profile" required />
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-5">
+
+                                    <div class="field pen">
+                                        <textarea name="message" class="text textarea" ng-model="message" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="field">
+                                        <button id="send" class="send" ng-click="submit()" ng-disabled="userForm.$invalid">
+                                            <span aria-hidden="true" class="li_paperplane"></span>Submit
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </form><br>
                         </div>
                     </div>
-
-                    <form class="clearfix" name="userForm" id="myForm1">
-
-                        <div class="eight columns">
-
-                            <div class="field user">
-                                <input type="text" name="name" class="text" placeholder="Name" ng-model="name" required />
-                                <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Name is required.</p>
-                            </div>
-
-                            <div class="field envelope">
-                                <input type="email" name="email" class="text" placeholder="Email" ng-model="email" required />
-                                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
-                            </div>
-
-                            <div class="field bulb">
-                                <input type="text" name="subject" class="text" placeholder="Subject" ng-model="subject" required>
-                            </div>
-
-                            <!--<div class="select money">-->
-                            <!--<select name="budget" id="cd-dropdown" class="cd-select text">-->
-                            <!--<option value="-1" selected>Who are you?</option>-->
-                            <!--<option value="Tech">Tech Company</option>-->
-                            <!--<option value="Fresh-Engineer">Fresh Engineer</option>-->
-                            <!--<option value="Senior-Engineer">Senior Engineer</option>-->
-                            <!--<option value="Seasoned-Professional">Seasoned Professional</option>-->
-                            <!--</select>-->
-                            <!--</div>-->
-                            <div class="field user">
-                                <input type="text" name="profile" class="text" ng-model="profile" placeholder="Your Profile" required />
-                            </div>
-
-                        </div>
-                        <div class="eight columns">
-
-                            <div class="field pen">
-                                <textarea name="message" class="text textarea" ng-model="message" placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="field">
-                                <button id="send" class="send" ng-click="submit()" ng-disabled="userForm.$invalid">
-                                    <span aria-hidden="true" class="li_paperplane"></span>Submit
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </form><br>
-                    <center>
-                        <h5>
-                            <span ng-show="loading"><img src="images/spinner.GIF" style="width: 40px;height: 40px;"></span>
-                            <span id="success" ng-show="show">Message has been sent! Please check your email.</span>
-                        </h5>
-                    </center>
-                </div>
-
-                <!-- Contact Form / End -->
-
-            </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                </row>
+            </container>
         </div>
+
+
+
+
+
+
+
+
+
+
+        <
 
     </section>
     <!-- Contact / End
@@ -1059,20 +723,6 @@
     <!-- Footer / Srart
     ================================================== -->
     <footer>
-
-        <!-- Twitter Feed
-        <div class="bluebg">
-            <div class="container">
-                <ul id="twitter-feed"></ul>
-                <script type="text/javascript">
-                    jQuery(document).ready(function($){
-                    $.getJSON('get-tweets.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=google&count=3'), function(tweets){
-                        $("#twitter-feed").html(tz_format_twitter(tweets));
-                    }); });
-                </script>
-            </div>
-        </div>
-         -->
         <!-- Footer Contact Details -->
         <div class="contact-details">
             <img src="images/logo_w.png">
@@ -1104,117 +754,11 @@
 
             });
         });
-	/*----------------------------------------------------*/
-	/*	Contact Form
-	 /*----------------------------------------------------*/
+        /*----------------------------------------------------*/
+        /*	Contact Form
+         /*----------------------------------------------------*/
 
-	/* jQuery Start */
-//	jQuery(document).ready(function() {
-//
-//		(function() {
-//			var animateSpeed=300;
-//			var emailReg = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
-//
-//			// Validating
-//
-//			function validateName(name) {
-//				if (name.val()=='*') {name.addClass('validation-error',animateSpeed); return false;}
-//				else {name.removeClass('validation-error',animateSpeed); return true;}
-//			}
-//
-//			function validateEmail(email,regex) {
-//				if (!regex.test(email.val())) {email.addClass('validation-error',animateSpeed); return false;}
-//				else {email.removeClass('validation-error',animateSpeed); return true;}
-//			}
-//
-//			function validateSubject(asubject) {
-//				if (asubject.val()=='*') {asubject.addClass('validation-error',animateSpeed); return false;}
-//				else {asubject.removeClass('validation-error',animateSpeed); return true;}
-//			}
-//
-//			function validateMessage(message) {
-//				if (message.val()=='') {message.addClass('validation-error',animateSpeed); return false;}
-//				else {message.removeClass('validation-error',animateSpeed); return true;}
-//			}
-//
-//			$('#send').click(function() {
-//
-//				var result=true;
-//
-//				var name = $('input[name=name]');
-//				var email = $('input[name=email]');
-//				var asubject = $('input[name=asubject]');
-//				var message = $('textarea[name=message]');
-//				var budget = $('input[name="budget"]');
-//
-//				// Validate
-//				if(!validateName(name)) result=false;
-//				if(!validateSubject(asubject)) result=false;
-//				if(!validateEmail(email,emailReg)) result=false;
-//				if(!validateMessage(message)) result=false;
-//
-//				if(result==false) return false;
-//
-//				// Data
-//				var data = 'name=' + name.val() + '&email=' + email.val() + '&asubject=' + asubject.val() + '&message='  + encodeURIComponent(message.val()) + "&budget="+budget.val();
-//
-//				// Disable fields
-//				$('.text').attr('disabled','true');
-//
-//				// Loading icon
-//				$('.loading').show();
-//
-//				// Start jQuery
-//				$.ajax({
-//
-//					// PHP file that processes the data and send mail
-//					url: "contact.php",
-//
-//					// GET method is used
-//					type: "GET",
-//
-//					// Pass the data
-//					data: data,
-//
-//					//Do not cache the page
-//					cache: false,
-//
-//					// Success
-//					success: function (html) {
-//
-//						if (html==1) {
-//
-//							// Loading icon
-//							$('.loading').fadeOut('slow');
-//
-//							//show the success message
-//							$('.success-message').slideDown('slow');
-//
-//							// Disable send button
-//							$('.send').attr('disabled',true);
-//
-//						}
-//
-//						else {
-//							$('.loading').fadeOut('slow')
-//							alert('Sorry, unexpected error. Please try again later.');
-//						}
-//					}
-//				});
-//
-//				return false;
-//
-//			});
-//
-//			$('input[name=name]').blur(function(){validateName($(this));});
-//			$('input[name=email]').blur(function(){validateEmail($(this),emailReg); });
-//			$('input[name=asubject]').blur(function(){validateSubject($(this));});
-//			$('textarea[name=message]').blur(function(){validateMessage($(this)); });
-//
-//		})();
-//
-//	});
-	/* jQuery End */
+        /* jQuery End */
     </script>
     <!-- End Document
     ================================================== -->
@@ -1226,15 +770,15 @@
 <script src="controller/contactCntrl.js"></script>
 
 <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-68383799-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-68383799-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
 

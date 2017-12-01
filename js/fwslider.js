@@ -332,7 +332,7 @@ $(window).load(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: true,
-        itemWidth: 240,
+        itemWidth: 220,
         itemMargin: 10,
 
     });
